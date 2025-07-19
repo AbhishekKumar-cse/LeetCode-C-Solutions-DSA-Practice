@@ -1,6 +1,7 @@
 #include<iostream>
 #include<vector>
 using namespace std;
+// wrong code right now
 
 int maximumLength(vector<int>& nums) {
     int maxlength = 0;
@@ -10,6 +11,7 @@ int maximumLength(vector<int>& nums) {
         if (nums[i] > 0) {
             currentLength++;
             maxlength = max(maxlength, currentLength);
+            
         } else {
             currentLength = 0;
         }
