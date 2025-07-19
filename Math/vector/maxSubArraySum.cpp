@@ -27,7 +27,7 @@ int main() {
     cout << "Enter the elements: ";
     for (int i = 0; i < n; i++) {
         cin >> num;
-    
+        nums.push_back(num);
     }
     int result = maxSubArray(nums);
     cout << "Maximum subarray sum: " << result << endl;
