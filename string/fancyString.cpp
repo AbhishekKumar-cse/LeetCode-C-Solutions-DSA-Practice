@@ -4,26 +4,27 @@
 using namespace std;
 
 
-string fancyString(const vector<string>& words) {
-    string result;
-    for (const auto& word : words) {
-        if (!result.empty()) {
-            result += " ";
+string makeFancyString(string s) {
+        string result;
+        for (int i = 0; i < s.size(); ++i) {
+            int n = result.size();
+            
+            if (n >= 2 && result[n - 1] == s[i] && result[n - 2] == s[i]) {
+                continue;
+            }
+            result += s[i];
         }
-        result += word;
+        return result;
+       
     }
-    return result;
-}
 
 int main() {
-    int n;
-    cout << "Enter the number of words: ";
-    cin >> n;
-    vector<string> words(n);
-    cout << "Enter the words: ";
-    for (int i = 0; i < n; i++) {
-        cin >> words[i];
-    }
-    cout << fancyString(words) << endl;
+    string s;
+    cout << "Enter a string: ";
+    cin >> s;
+
+    string fancyString = makeFancyString(s);
+    cout << "Fancy String: " << fancyString << endl;
+
     return 0;
 }
