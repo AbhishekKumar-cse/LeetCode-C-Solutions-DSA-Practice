@@ -4,6 +4,7 @@
 using namespace std;
 class Solution {
 public:
+// Boyer-Moore Voting Algorithm
     int majorityElement(vector<int>& nums) {
         int n= nums.size();
       int freq =0;
