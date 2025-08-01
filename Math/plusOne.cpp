@@ -18,8 +18,15 @@ public:
     }
 };
 int main() {
+    int n;
+    cout << "Enter the number of digits: ";
+    cin >> n;
+    vector<int> digits(n);
+    cout << "Enter the digits: ";
+    for (int i = 0; i < n; i++) {
+        cin >> digits[i];
+    }
     Solution sol;
-    vector<int> digits = {1, 2, 3};
     vector<int> result = sol.plusOne(digits);
     for (int i : result) {
         cout << i << " ";
