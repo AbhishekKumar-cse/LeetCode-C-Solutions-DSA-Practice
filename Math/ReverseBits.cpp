@@ -15,10 +15,12 @@ public:
         return ans;
     }
 };
-int main(){
-        vector<long long> testCases = {43261596, 4294967293};
-        Solution sol;
-        for (long long n : testCases) {
-            cout << "Input: " << n << " | Reversed: " << sol.reverseBits(n) << endl;
-        }
+int main() {
+    vector<uint32_t> testCases = {43261596, 4294967293}; // Use uint32_t here
+    Solution sol;
+
+    for (uint32_t n : testCases) {
+        cout << "Input: " << n << " | Reversed: " << sol.reverseBits(n) << endl;
+    }
+    return 0;
 }
