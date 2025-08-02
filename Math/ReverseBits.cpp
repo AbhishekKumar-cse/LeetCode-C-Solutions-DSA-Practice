@@ -16,11 +16,14 @@ public:
     }
 };
 int main() {
-    vector<uint32_t> testCases = {43261596, 4294967293}; // Use uint32_t here
+    uint32_t n;
+    cout << "Enter a 32-bit unsigned integer: ";
+    cin >> n;
+    vector<uint32_t> testCases = {n};
     Solution sol;
 
-    for (uint32_t n : testCases) {
-        cout << "Input: " << n << " | Reversed: " << sol.reverseBits(n) << endl;
+    for (uint32_t num : testCases) {
+        cout << "Input: " << num << " | Reversed: " << sol.reverseBits(num) << endl;
     }
     return 0;
 }
