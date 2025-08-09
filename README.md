@@ -15,12 +15,20 @@ The problems are grouped by topic for easier navigation and revision.
 ---
 
 ## 📂 Folder Structure
--Arrays
+-Array
+-Binary Search
+-Math
+-String
+-Two Pointer
+-Vector
 ---
 
 ## ✅ Topics Covered
 
 - Arrays
+- Binary Search
+- Two Pointer
+- Vector
 
 
 ---
