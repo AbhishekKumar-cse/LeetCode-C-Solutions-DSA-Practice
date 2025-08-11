@@ -1,5 +1,6 @@
 #include<iostream>
 #include<vector>
+#include <cstdint>
 using namespace std;
 
 
@@ -22,7 +23,7 @@ int main() {
     vector<uint32_t> testCases = {n};
     Solution sol;
 
-    for (uint32_t num : testCases) {
+    for ( uint32_t num : testCases) {
         cout << "Input: " << num << " | Reversed: " << sol.reverseBits(num) << endl;
     }
     return 0;
