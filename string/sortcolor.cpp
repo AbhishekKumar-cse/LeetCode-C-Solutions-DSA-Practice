@@ -1,3 +1,7 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+
 class Solution {
 public:
     void sortColors(vector<int>& A) {
@@ -18,3 +22,13 @@ public:
        }
     }
 };
+
+int main(){
+    Solution sol;
+    vector<int> colors = {2, 0, 2, 1, 1, 0};
+    sol.sortColors(colors);
+    for(int i=0; i<colors.size(); i++){
+        cout << colors[i] << " ";
+    }
+    return 0;
+}
