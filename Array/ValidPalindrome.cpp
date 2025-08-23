@@ -1,3 +1,7 @@
+#include <iostream>
+#include <string>
+#include <cctype>
+using namespace std;
 
 class Solution {
 public:
@@ -19,3 +23,12 @@ public:
         return true;
     }
 };
+
+int main(){
+    Solution sol;
+    cout << boolalpha;  // Print bool values as true/false
+    cout << sol.isPalindrome("A man, a plan, a canal: Panama") << endl;  // true
+    cout << sol.isPalindrome("race a car") << endl;  // false
+    cout << sol.isPalindrome(" ") << endl;  // true
+    return 0;
+}
